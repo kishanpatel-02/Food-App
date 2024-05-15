@@ -6,6 +6,7 @@ import Cart from './Pages/Cart/Cart.jsx'
 import PlaceOrder from './Pages/PlaceOrder/PlaceOrder.jsx'
 import Footer from './Components/Footer/Footer.jsx'
 import LoginPopUp from './Components/LoginPopUp/LoginPopUp.jsx'
+import Verify from './Pages/Verify/Verify.jsx'
 
 const App = () => {
 
@@ -20,6 +21,7 @@ const App = () => {
           <Route path='/' element={<Home />} />
           <Route path='/cart' element={<Cart />} />
           <Route path='/order' element={<PlaceOrder />} />
+          <Route path='/verify' element={<Verify />} />
         </Routes>
       </div>
       <Footer />
