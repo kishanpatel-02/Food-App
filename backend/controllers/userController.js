@@ -64,12 +64,6 @@ const registerUser = async (req,res) => {
         });
 
         const user = await newUser.save();
-        // if(user){
-        //    console.log("user created");
-        // }
-        // else{
-        //     console.log("user not created");
-        // }
         const token = createToken(user._id);
 
         return res.json({success:true,token:token});
